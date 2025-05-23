@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom prose heading styles */
+@layer components {
+  .prose h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .prose h2 {
+    font-size: 1.875rem;
+    color: #333;
+  }
+}

@@ -1,0 +1,54 @@
+---
+author: Erik Mellum
+image: 'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+title: 'This is my first post'
+subtitle: 'This is a subtitle about how great this first post really is.'
+date: '2024-04-07'
+---
+
+import CardContainer from '../components/CardContainer'
+import Footer from '../components/Footer'
+import Main from '../components/Main'
+import Header from '../components/Header'
+import PageContainer from '../components/PageContainer'
+import PostsList from '../components/PostsList'
+
+<PageContainer>
+  <Header />
+  <Main>
+    <section >
+      # What else can I tell you about this?
+
+      For one, it is super convenient to write markdown.
+
+      ## Another detail I can tell you about this is that it is a lot faster
+
+      Why is it faster? Well, give it a try and see
+
+      ## The last thing I'll tell you
+
+      Watch out for people merging too quickly on the freeway. Lotta crazy drivers out there.
+
+    </section>
+    <CardContainer
+      cards={[
+        {
+          title: 'First Fake Card',
+          image: 'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          alt: "First Fake Card"
+        },
+        {
+          title: 'Second Fake Card',
+          image: 'https://images.unsplash.com/photo-1466618572466-002f11d518db?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          alt: "Second Fake Card"
+        },
+        {
+          title: 'Third Fake Card',
+          image: 'https://images.unsplash.com/photo-1468861389126-e0ca735dba0d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+          alt: "Third Fake Card"
+        },
+      ]}
+    />
+
+  </Main>
+</PageContainer>
