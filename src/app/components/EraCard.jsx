@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function EraCard({ title, dateRange, description, image, slug }) {
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg bg-slate-50 mb-6 flex flex-col h-full hover:scale-102 transition">
+    <div className="rounded-xl overflow-hidden shadow-lg bg-slate-50/80 mb-6 flex flex-col h-full hover:scale-102 transition">
       {/* Image container with relative layout */}
       <div className="relative w-full aspect-[4/3] overflow-hidden ">
         <Image

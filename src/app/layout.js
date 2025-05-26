@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
           <Analytics />
           <SpeedInsights />
           <Navbar />
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow text-gray-700">{children}</main>
           <Footer />
         </div>
       </body>

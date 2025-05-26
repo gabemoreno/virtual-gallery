@@ -81,7 +81,7 @@ export default function RenaissancePage() {
       {/* Background image */}
       <div className="fixed inset-0 -z-10 h-full w-full">
         <img
-          src="https://images.unsplash.com/photo-1606819717115-9159c900370b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1487147264018-f937fba0c817?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Abstract painted background"
           className="w-full h-full object-cover"
         />

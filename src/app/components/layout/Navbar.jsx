@@ -31,7 +31,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="flex justify-between bg-gradient-to-t from-slate-700 to-slate-800 p-6 items-center sticky top-0 shadow-lg z-50">
+    <nav className="text-gray-800 flex justify-between bg-gradient-to-t from-slate-700 to-slate-800 p-6 items-center sticky top-0 shadow-lg z-50">
       <Link href="/" className="bg-slate-50 p-4 rounded-full hover:bg-indigo-100">
         <PaintBrushIcon className="w-6 h-6 text-slate-800 hover:scale-105 transition-all cursor-pointer" />
       </Link>

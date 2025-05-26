@@ -72,7 +72,7 @@ export default function EraCarousel({ eras }) {
             <button
               key={idx}
               onClick={() => instanceRef.current?.moveToIdx(idx)}
-              className={`w-3 h-3 rounded-full ${currentSlide === idx ? 'bg-slate-800' : 'bg-slate-50'}`}
+              className={`w-3 h-3 rounded-full ${currentSlide === idx ? 'bg-slate-800' : 'bg-slate-50/80'}`}
             />
           ))}
         </div>
