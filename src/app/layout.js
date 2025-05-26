@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata = {
-  title: 'Next.js Demo Page',
-  description: 'This is a demo Next.js website',
+  title: 'Virtual Art Gallery',
+  description: 'Explore brushstrokes through time',
 }
 
 export default function RootLayout({ children }) {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased text-gray-700`}>
         {/* Static background gradient layer */}
-        <div className="fixed inset-0 -z-10 bg-gradient-to-b from-slate-100 to-slate-300" />
+        <div className="fixed inset-0 -z-10" />
 
         {/* Page wrapper with full-height column flex layout */}
         <div className="flex flex-col min-h-screen">
