@@ -1,43 +1,17 @@
-// I belong inside src/app/about/page.js
-import SimpleGallery from '../components/SimpleGallery'
-
-const images = [
-  {
-    largeURL:
-      'https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    thumbnailURL:
-      'https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    width: 3840,
-    height: 5760,
-    alt: 'Flower Image 1',
-  },
-  {
-    largeURL:
-      'https://images.unsplash.com/photo-1613539246066-78db6ec4ff0f?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    thumbnailURL:
-      'https://images.unsplash.com/photo-1613539246066-78db6ec4ff0f?q=80&w=1286&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    width: 3840,
-    height: 5760,
-    alt: 'Flower Image 2',
-  },
-  {
-    largeURL:
-      'https://images.unsplash.com/photo-1531131141161-ecdfb1858dd2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    thumbnailURL:
-      'https://images.unsplash.com/photo-1531131141161-ecdfb1858dd2?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    width: 3840,
-    height: 5760,
-    alt: 'Flower Image 3',
-  },
-]
+import Link from 'next/link'
 
 export default function About() {
   return (
-    <div className="p-12">
-      <h1 className="text-2xl">About Page</h1>
-      <div className="mt-12">
-        <SimpleGallery galleryID="image-gallery" images={images} />
-      </div>
+    <div className="text-center mt-20 max-w-2xl mx-auto">
+      <h1 className="text-5xl font-bold mb-4">Welcome to the Time Travel Gallery</h1>
+      <p className="text-xl text-gray-600 mb-8">
+        Journey through history and explore iconic works of art from the past, present, and future.
+      </p>
+      <Link href="/renaissance">
+        <button className="px-6 py-3 text-xl bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+          Enter the Gallery
+        </button>
+      </Link>
     </div>
   )
 }
