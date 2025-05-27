@@ -4,45 +4,45 @@ import EraCard from '../../components/era/EraCard'
 import ArtistInfo from '../../components/gallery/ArtistInfo'
 import QuoteBox from '../../components/gallery/QuoteBox'
 import Gallery from '../../components/gallery/Gallery'
-import { renaissancePieces } from '@/data/renaissancePieces'
+import { contemporaryPieces } from '@/data/contemporaryPieces'
 import GalleryBackground from '@/components/gallery/GalleryBackground'
 import Link from 'next/link'
 
-export default function RenaissancePage() {
-  // Gallery image data
-
+export default function ContemporaryPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-12">
       {/* Background image */}
       <GalleryBackground />
+
       {/* Era overview card */}
       <EraCard
-        title="Renaissance"
-        dateRange="1300s–1600s"
-        description="The Renaissance marked a cultural revival of classical art, literature, and humanism in Europe."
-        image="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/960px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
+        title="Contemporary"
+        dateRange="1990s–Present"
+        description="Bold, diverse, and global — contemporary art explores identity, media, and the boundaries of creativity."
+        image="https://hirshhorn.si.edu/wp-content/uploads/2016/12/Eternity2.jpg"
         slug={undefined}
         hoverScale={false}
       />
 
       {/* Featured Quote */}
-      <QuoteBox quote="Art is never finished, only abandoned." author="Leonardo da Vinci" />
+      <QuoteBox quote="Art is not a mirror held up to reality, but a hammer with which to shape it." author="Banksy" />
 
       {/* Image Gallery */}
       <h2 className="text-2xl font-semibold mt-10 mb-4">Gallery</h2>
-      <Gallery images={renaissancePieces} galleryID="renaissance-gallery" />
+      <Gallery images={contemporaryPieces} galleryID="contemporary-gallery" />
 
       {/* Featured Artist */}
       <h2 className="text-2xl font-semibold mt-12 mb-4">Featured Artist</h2>
       <ArtistInfo
-        name="Leonardo da Vinci"
-        bio="Leonardo was a polymath whose works combined science, art, and innovation. He's known for masterpieces like the Mona Lisa and The Last Supper."
-        image="https://i.natgeofe.com/n/37c3c776-b8cb-4be1-988a-cf593c776b88/01-leonardo-da-vinci-book-talk.jpg"
+        name="Yayoi Kusama"
+        bio="A Japanese artist known for her immersive installations, polka dot motifs, and pioneering influence on contemporary conceptual and installation art."
+        image="https://images.masterworksfineart.com/person/yayoi-kusama/1200px-Yayoi_Kusama_cropped_1_Yayoi_Kusama_201611.jpg"
       />
+
       <div className="text-center mt-16">
-        <Link href="/baroque">
+        <Link href="/">
           <button className="px-6 py-3 bg-slate-700 text-white rounded shadow hover:bg-indigo-500 hover:scale-102 transition cursor-pointer">
-            Explore Baroque →
+            Return to Timeline →
           </button>
         </Link>
       </div>

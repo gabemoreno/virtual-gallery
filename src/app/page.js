@@ -1,7 +1,7 @@
-import EraCard from './components/EraCard'
+import EraCard from '../components/era/EraCard'
 import Link from 'next/link'
-import EraCarousel from './components/eras/EraCarousel'
-import { eras } from './components/eras/Eras'
+import EraCarousel from '../components/era/EraCarousel'
+import { eras } from '../components/era/Eras'
 
 export default function Home() {
   return (

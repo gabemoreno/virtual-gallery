@@ -1,16 +1,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function EraCard({ title, dateRange, description, image, slug }) {
+export default function EraCard({ title, dateRange, description, image, slug, hoverScale = true }) {
+  // Apply hover scaling class conditionally
+  const cardClasses = `rounded-xl overflow-hidden shadow-lg bg-slate-50/80 mb-6 flex flex-col h-full transition ${
+    hoverScale ? 'hover:scale-102' : ''
+  }`
+
   return (
-    <div className="rounded-xl overflow-hidden shadow-lg bg-slate-50/80 mb-6 flex flex-col h-full hover:scale-102 transition">
+    <div className={cardClasses}>
       {/* Image container with relative layout */}
-      <div className="relative w-full aspect-[4/3] overflow-hidden ">
+      <div className="relative w-full aspect-[4/3] overflow-hidden">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover transition-transform duration-500 "
+          className="object-cover transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
       </div>
@@ -19,7 +24,7 @@ export default function EraCard({ title, dateRange, description, image, slug }) 
       <div className="flex flex-col flex-grow p-6">
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="text-sm text-gray-500 italic">{dateRange}</p>
-        <p className="mt-2 text-gray-700 ">{description}</p>
+        <p className="mt-2 text-gray-700">{description}</p>
 
         {slug && (
           <div className="mt-auto pt-4">

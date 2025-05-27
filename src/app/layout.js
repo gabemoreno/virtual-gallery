@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import Footer from './components/layout/Footer'
-import Navbar from './components/layout/Navbar'
+import Footer from '../components/layout/Footer'
+import Navbar from '../components/layout/Navbar'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 
@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: 'Virtual Art Gallery',
   description: 'Explore brushstrokes through time',
+  icons: {
+    icon: '/icon.png',
+  },
 }
 
 export default function RootLayout({ children }) {

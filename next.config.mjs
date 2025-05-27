@@ -31,6 +31,39 @@ const nextConfig = {
         hostname: 'hirshhorn.si.edu',
         pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'cdn.britannica.com',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'uploads6.wikiart.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'd7hftxdivxxvm.cloudfront.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.art-prints-on-demand.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'warholfoundation.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'redwoodartgroup.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.masterworksfineart.com',
+      },
     ],
   }, // dont forget the comma here
   pageExtensions: ['js', 'jsx', 'mdx'],

@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import PhotoSwipeLightbox from 'photoswipe/lightbox'
-import GalleryItem from './GalleryItem.jsx'
+import GalleryCard from './GalleryCard.jsx'
 import 'photoswipe/style.css'
 
 export default function Gallery({ images, galleryID }) {
@@ -19,7 +19,7 @@ export default function Gallery({ images, galleryID }) {
   return (
     <div className="pswp-gallery grid grid-cols-1 sm:grid-cols-2 gap-6" id={galleryID}>
       {images.map((image, index) => (
-        <GalleryItem key={`${galleryID}-${index}`} image={image} />
+        <GalleryCard key={`${galleryID}-${index}`} image={image} />
       ))}
     </div>
   )
