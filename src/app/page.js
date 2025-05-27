@@ -2,17 +2,21 @@ import EraCard from '../components/era/EraCard'
 import Link from 'next/link'
 import EraCarousel from '../components/era/EraCarousel'
 import { eras } from '../components/era/Eras'
+import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="relative overflow-hidden">
       {/* Background image */}
       <div className="fixed inset-0 -z-10 h-full w-full">
-        <img
-          src="https://images.unsplash.com/photo-1606819717115-9159c900370b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Abstract painted background"
-          className="w-full h-full object-cover"
-        />
+        <div className="w-full h-full object-cover">
+          <Image
+            src="https://images.unsplash.com/photo-1606819717115-9159c900370b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Abstract painted background"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-white/70 backdrop-blur-sm" />
       </div>
 

@@ -14,7 +14,7 @@ export default function AboutPage() {
       </p>
 
       <ul className="list-disc list-inside mb-6 text-lg space-y-2">
-        <li>A brief introduction to the era's cultural and aesthetic themes</li>
+        <li>A brief introduction to the era&rsquo;s cultural and aesthetic themes</li>
         <li>A handpicked gallery of representative artworks</li>
         <li>Insights into a featured artist who helped define the movement</li>
       </ul>
@@ -27,8 +27,8 @@ export default function AboutPage() {
       </p>
 
       <p className="text-lg">
-        Whether you're a student, a casual art lover, or simply curious, you're invited to explore and reflect on the
-        enduring legacy of human creativity—one era at a time.
+        Whether you&rsquo;re a student, a casual art lover, or simply curious, you&rsquo;re invited to explore and
+        reflect on the enduring legacy of human creativity—one era at a time.
       </p>
     </main>
   )
